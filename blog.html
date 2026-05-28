@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>분당 홈페이지 빌더 마케팅 - 블로그</title>
+    <meta name="description" content="분당 홈페이지 빌더 마케팅 전문업체입니다. 최고의 서비스를 제공합니다. 010-6279-0862 로 문의하세요.">
+    <meta name="keywords" content="분당 홈페이지 빌더, 마케팅, 홈페이지 빌더">
+    <link rel="canonical" href="https://kr-pbn-bp-005.pages.dev">
+    <meta property="og:title" content="분당 홈페이지 빌더 마케팅">
+    <meta property="og:description" content="분당 홈페이지 빌더 마케팅 전문업체입니다. 최고의 서비스를 제공합니다. 010-6279-0862 로 문의하세요.">
+    <meta property="og:url" content="https://kr-pbn-bp-005.pages.dev">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1d1d1f;
+            --accent-color: #0071e3;
+            --gray-light: #f5f5f7;
+            --gray-border: #d2d2d7;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Nav Styles */
+        .nav {
+            border-bottom: 1px solid var(--gray-border);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 24px;
+        }
+        .nav li {
+            margin: 0;
+        }
+        .nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 12px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        .nav a:hover {
+            opacity: 1;
+        }
+        .nav-logo {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Hero & Content */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 21px;
+            font-weight: 400;
+            color: #86868b;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        /* Grid Layout for Blog Post */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+        .content-card {
+            background: var(--bg-color);
+            border-radius: 18px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        }
+        .article-meta {
+            font-size: 14px;
+            color: #86868b;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .article-body h2 {
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .article-body p {
+            font-size: 19px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            color: #333;
+        }
+
+        /* Review / Quote Section */
+        .review {
+            background-color: var(--gray-light);
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .review h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .review p {
+            font-size: 17px;
+            color: #515154;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--gray-light);
+            padding: 40px 0;
+            font-size: 12px;
+            color: #86868b;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .footer-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 17px; }
+            .nav .container { flex-direction: column; height: auto; padding: 10px 0; }
+            .nav ul { display: none; flex-direction: column; width: 100%; text-align: center; padding-top: 10px; }
+            .nav ul.active { display: flex; }
+            .nav-toggle { display: block; cursor: pointer; font-size: 20px; }
+            .content-card { padding: 20px; }
+            .article-body h2 { font-size: 24px; }
+            .article-body p { font-size: 17px; }
+        }
+        .nav-toggle { display: none; }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <a href="#" class="nav-logo">분당 빌더</a>
+            <div class="nav-toggle" onclick="document.querySelector('.nav ul').classList.toggle('active')">☰</div>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">포트폴리오</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="tel:01062790862">문의: 010-6279-0862</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>분당 홈페이지 빌더 마케팅</h1>
+            <p>단순히 예쁜 사이트를 넘어, 실제 매출이 일어나는 구조를 설계합니다.</p>
+        </section>
+
+        <section class="grid">
+            <article class="content-card">
+                <span class="article-meta">2023. 10. 25 | 마케팅 인사이트</span>
+                <div class="article-body">
+                    <h2>분당, 정말 '홈페이지'만 있으면 될까요?</h2>
+                    
+                    <p>분당에서 식당을 운영하거나 학원을 하시는 분들을 만나보면, 항상 똑같은 질문을 받게 됩니다. "요즘은 인스타그램이 다지 않나요? 굳이 비싼 돈 주고 홈페이지를 왜 만드나요?"</p>
+
+                    <p>솔직히 말씀드려요. 예전엔 맞았을지도 몰라요. 하지만 2024 년 지금, 고객들의 행동 패턴은 좀 더 복잡해졌어요. 인스타그램에서 예쁜 사진을 보고 '좋아요'를 누르는 건 쉽지만, 실제로 카드를 꺼내 결제를 하거나 예약을 잡기 전에는 반드시 한 번 더 확인을 하거든요.</p>
+
+                    <p>"이 가게 진짜 믿을 만한 곳인가?", "메뉴판은 좀 더 자세히 볼 수 없나?", "위치 찾아가기 편한가?"</p>
+
+                    <p>이때 고객이 찾게 되는 곳이 바로 '홈페이지'입니다. SNS 는 쇼윈도라면, 홈페이지는 실제 매장과 같은 곳이죠. 분당이라는 지역은 경쟁이 치열합니다. 정자동, 수내동, 야탑동 어디서든 비슷한 업체가 넘쳐나요. 이때 신뢰도를 한 방에 올려주는 게 바로 잘 만들어진 홈페이지입니다.</p>
+
+                    <h2>우리는 '빌더'가 아니라 '마케터'입니다</h2>
+
+                    <p>많은 분들이 홈페이지 제작사를 찾으실 때 디자인이 예쁜지부터 보시더라고요. 물론 디자인도 중요합니다. 하지만 저희가 생각하는 '좋은 홈페이지'는 조금 다릅니다.</p>
+
+                    <p>고객이 들어왔을 때 3 초 안에 "아, 여기가 내가 찾던 곳이구나"라고 느끼게 해야 합니다. 그리고 망설임 없이 '전화하기' 버튼이나 '예약하기' 버튼을 누르게 만들어야 하죠. 저희 분당 홈페이지 빌더 팀은 단순히 코드를 짜거나 이미지를 배치하는 기술자가 아닙니다. 고객님의 비즈니스를 어떻게 하면 더 잘 팔릴 수 있을지 고민하는 마케터입니다.</p>
+
+                    <p>예를 들어볼게요. 분당의 한 베이커리 사장님께서 의뢰를 주셨었어요._website_는 예쁜데 문의가 하나도 안 온다고 하셨죠. 분석해보니, '예약하기' 버튼이 화면 하단에 숨어있었어요. 사람들이 스크롤을 끝까지 내리지 않는다는 걸 몰랐던 거죠. 저희가 버튼 위치를 상단에 고정하고, 메뉴 사진을 좀 더 먹음직스럽게 보정했더니, 한 달 만에 문의량이 3 배나 늘었습니다.</p>
+
+                    <h2>지역 밀착형 마케팅의 힘</h2>
+
+                    <p>서울 전체를 타겟으로 하는 거대 기업들과는 다르게, 분당 지역 비즈니스는 '지역성'이 핵심입니다. '분당 맛집', '분당 영어학원', '분당 인테리어' 처럼 지역 키워드가 포함된 검색에서 상위에 노출되는 전략이 필수적이죠.</p>
+
+                    <p>홈페이지가 있으면 SEO(검색엔진최적화) 도 훨씬 수월해집니다. 블로그 글을 홈페이지에 연동해서 지역 정보를 꾸준히発信하면, 구글과 네이버가 "아, 이 사이트는 분당 지역에서 활발히 활동하는 곳이구나"라고 인식하게 되거든요.</p>
+
+                    <p>홈페이지 제작은 tốn 비용이 드는 투자가 아닙니다. 24 시간 동안 쉬지 않고 고객님의 사업을 홍보하는 최고의 직원을 고용하는 것과 같아요. 그 직원이 말이 많거나 실수를 하지 않도록, 저희가 완벽하게 세팅해 드립니다.</p>
+
+                    <p>아직 홈페이지가 없거나, 있어도 효과가 없다고 느끼신다면 언제든 편하게 연락주세요. 커피 한 잔 하시면서 분당에서 어떻게 하면 더 잘 팔릴 수 있을지 이야기 나눠봅시다. 기술적인 용어? 걱정 마세요. 쉽게 설명해 드릴게요.</p>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <section class="review">
+        <div class="container">
+            <h2>고객의 목소리</h2>
+            <p>"단순히 사이트 만들어주는 줄 알았는데, 마케팅 조언까지 해주셔서 너무 좋았습니다. 덕분에 분당 지역에서 검색 노출도 잘 되고 있어요."</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                &copy; 2024 분당 홈페이지 빌더 마케팅. All rights reserved.
+            </div>
+            <div class="footer-links">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="tel:01062790862">010-6279-0862</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
